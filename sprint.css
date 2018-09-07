@@ -1,0 +1,17 @@
+header{
+    display: flex;
+    border-style: solid;
+}
+footer{
+    display: flex;
+    border-style: solid;
+}
+
+.z{
+    display: inline-flex;
+    align-content: stretch;
+    border-style: solid;
+    width: 100%;
+   
+
+}
