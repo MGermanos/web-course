@@ -14,6 +14,7 @@ function shuffle(array) {
     }
   
     return array;
+    
   }
 
 
@@ -54,6 +55,7 @@ for(let i=0;i<container2_card.length;i++){
 ;
 var clicked1=[0,0];
     $("img").click(function(){
+       if($(this).attr("src")=="qst.jpg"){
         if(clicked1[0]==0){
         clicked1[0]=$(this);
        
@@ -71,7 +73,23 @@ var clicked1=[0,0];
                 $(this).attr("src",$(this).attr("class"));
                 $(this).attr("src","qst.jpg");
                 clicked1[0].attr("src","qst.jpg"); 
-  
+                var score=document.getElementById("score").textContent;
+                score=parseInt(score,10);
+                score=score-1;
+                if(score >= 0){
+                    
+                document.getElementById("score").innerHTML=score;
+                }
+                else{
+                    
+                document.getElementById("score").innerHTML=0;
+                }
+            }
+            else{// match
+                var score=document.getElementById("score").textContent;
+                score=parseInt(score,10);
+                score=score+3;
+                document.getElementById("score").innerHTML=score;
             }
     }
     else{
@@ -80,4 +98,5 @@ var clicked1=[0,0];
 
     clicked1=[0,0];
     }
+}
     });
