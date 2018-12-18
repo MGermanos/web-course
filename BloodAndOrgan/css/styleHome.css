@@ -1,0 +1,252 @@
+body{
+    font-family: "Gill Sans", Gill, sans-serif;
+}
+
+button{
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 8px;
+  color: black;
+  width:100px;
+  height:50px;
+}
+button:hover{
+  background-color: red;
+  color: white;
+  transition-duration: 0.5s;
+}
+.b1{
+    border: 2px solid black;
+}
+.b1:hover{
+    background: white;
+    border: 2px solid red;
+    color: black;
+    transition-duration: 0.5s;
+}
+.searchButton{
+    width: auto;
+    height: auto;
+    border-radius: 0%;
+    border: 1px solid black
+
+}
+.searchButton:hover{
+    border:1px solid red;
+    background: white;
+    color:black;
+}
+.hide{
+  display: none;
+}
+a:link{
+  color: grey;
+}
+a:hover{
+  color: darkgrey;
+}
+label{
+  display: inline-block;
+}
+
+.change-color{
+    filter: grayscale(100);
+    transition: 1s;
+}
+.change-color:hover{
+    filter: grayscale(0);
+    transition: 1s;
+}
+/* -------------------------HEADER-------------------------------------------*/
+.header {
+    
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding: 10px 10px;
+  border-bottom: 1px solid grey;
+  
+}
+
+/* Style the header links */
+.header a {
+  text-transform: capitalize;
+  text-decoration: none;
+  float: left;
+  color: grey;
+  text-align: center;
+  padding: 12px;
+  font-size: 2em;
+  margin: 5px;
+  border-radius: 8px;
+
+
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: while;
+  color:red;
+  transition-duration: 0.5s;
+}
+
+
+.header1{
+    display: none;
+}
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+
+.icon{
+    width: 1px;
+    height: 1px;
+}
+
+#donate-blood{
+    padding: 20px;
+    display: block;
+    margin: 10px auto 10px auto;
+}
+
+
+table{
+    text-align: center;
+    width: 70%;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+
+}
+th {  
+    padding: 10px;
+    border: 0px solide white;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+}
+
+tr{
+    
+    text-transform: capitalize;
+
+    padding: 10px;
+    background: white;
+}
+
+
+/* ------------------------PROFILE-------------------------------------------*/
+
+#profile{
+    display: flex;
+    justify-content: stretch;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.p{
+    color:grey;
+    text-align: center;
+}
+
+/* ------------------------Register------------------------------------------*/
+
+#register{
+    text-align: center;
+    background-image: url("../images/bg.png");
+}
+
+#register a{
+    color:red;
+}
+#register a:hover{
+    color:grey;
+}
+#register h1{
+    color:red;
+}
+#highlight{
+    background-color: white;
+    display:inline-block;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* --------------------------Donate-------------------------------------------*/
+#donate{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+#donate h1{
+    color:grey;
+}
+ul{
+    text-align: start;
+}
+
+/* --------------------------Request-------------------------------------------*/
+#request h1{
+    color:grey;
+}
+
+#request{
+    line-height: 20px;
+    display: flex;   
+    flex-direction: column;
+/*     
+    justify-content: center;
+    align-content: center;  */
+    text-align: center;
+}
+
+.clickclick:visited{
+color:grey;
+}
+.clickclick{
+    text-decoration: none;
+}
+
+
+/* --------------------------FOOTER-------------------------------------------*/
+footer {
+    color:white;
+    text-align: center;
+    background-color: black;
+    padding: 0px;
+    margin:0px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    padding:20px;
+  }
+
+@media screen and (max-width: 500px) {
+    .header{
+      display:none;
+    }
+    .header1{
+            
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px 10px;
+    border-bottom: 1px solid grey;
+    }
+    #profile{
+      display: block;
+      }
+    #profile img{
+      display: block;
+      }
+      #donate{
+          display:block;
+      }
+      #donate ul{
+          display: block;
+      }
+      .disapear{
+          display: none;
+      }
+  }

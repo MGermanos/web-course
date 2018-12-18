@@ -1,0 +1,81 @@
+body{
+  font-family: "Gill Sans", Gill, sans-serif;
+}
+
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 8% 0 0;
+  margin: auto;
+  text-align: center;
+}
+
+button, .button{
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 8px;
+  color: black;
+  width:100px;
+  height:50px;
+}
+.button:hover , button:hover{
+  background-color: red;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+.login_container{
+
+  width: 50%;
+  align-self: center;
+  border: 2px solid red;
+
+}
+.login form{
+  color: grey;
+
+}
+h1{
+  color:black;
+}
+.i{
+  display: block;
+  align-self: center;
+  padding: 10px;
+  border: 10px;
+  margin:10px;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 2px;
+  color: black;
+}
+#radio{
+
+  color:red;
+  display:none;
+  align-self: center;
+}
+.hide{
+  display: none;
+}
+a:link{
+  color: grey;
+}
+a:visited{
+color:red;
+}
+a:hover{
+  color: darkgrey;
+}
+label{
+  display: inline-block;
+}
+
+.already-registered{
+  display: block;
+  background-color: rgb(219, 73, 73);
+  border: 1px solid red;
+  color:white;
+}
